@@ -24,7 +24,6 @@ public class ControllerLogin {
 		if (email.getText().equals("admin") && senha.getText().equals("admin")) {
 			System.out.println("Realizando login com acesso ADMIN");
 
-
 			try {
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Dashboard.fxml"));
 				

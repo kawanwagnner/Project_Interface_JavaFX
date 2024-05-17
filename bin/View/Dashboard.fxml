@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PagamentoController">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="856.0">
          <children>
@@ -70,31 +70,31 @@
                                     <Font name="SansSerif Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="99.0" layoutY="213.0" prefHeight="33.0" prefWidth="202.0" promptText="xxxx xxxx xxxx xxxx" />
+                              <TextField fx:id="conta" layoutX="99.0" layoutY="213.0" prefHeight="33.0" prefWidth="202.0" promptText="xxxx xxxx xxxx xxxx" />
                               <Text layoutX="101.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV">
                                  <font>
                                     <Font name="SansSerif Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="101.0" layoutY="277.0" prefHeight="33.0" prefWidth="68.0" promptText="••••" />
+                              <TextField fx:id="cvv" layoutX="101.0" layoutY="277.0" prefHeight="33.0" prefWidth="68.0" promptText="••••" />
                               <Text layoutX="214.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MMA">
                                  <font>
                                     <Font name="SansSerif Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="212.0" layoutY="279.0" prefHeight="33.0" prefWidth="87.0" promptText="xxxx" text="00/00" />
+                              <TextField fx:id="mma" layoutX="212.0" layoutY="279.0" prefHeight="33.0" prefWidth="87.0" promptText="00/00" />
                               <Text layoutX="101.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Titular">
                                  <font>
                                     <Font name="SansSerif Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="99.0" layoutY="146.0" prefHeight="33.0" prefWidth="202.0" promptText="João Pedrinho da Silva" />
-                              <Button layoutX="198.0" layoutY="333.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="49.0" text="Ⓛista">
+                              <TextField fx:id="nomeTitular" layoutX="99.0" layoutY="146.0" prefHeight="33.0" prefWidth="202.0" promptText="João Pedrinho da Silva" />
+                              <Button layoutX="201.0" layoutY="333.0" mnemonicParsing="false" onAction="#limpar" prefHeight="30.0" prefWidth="60.0" text="Limpar">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button layoutX="126.0" layoutY="333.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Adicionar">
+                              <Button layoutX="116.0" layoutY="333.0" mnemonicParsing="false" onAction="#adicionar" prefHeight="30.0" prefWidth="70.0" text="Adicionar">
                                  <cursor>
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
